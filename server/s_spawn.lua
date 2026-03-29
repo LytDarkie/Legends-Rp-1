@@ -33,11 +33,12 @@ addEventHandler("onPlayerWasted", root, function(ammo, killer, weapon, bodypart)
     end
 
     -- Respawn timer (5 seconds)
+    local deadPlayer = source
     setTimer(function()
-        if isElement(source) then
-            respawnPlayer(source)
+        if isElement(deadPlayer) then
+            respawnPlayer(deadPlayer)
         end
-    end, 5000, 1, source)
+    end, 5000, 1)
 end)
 
 function respawnPlayer(player)

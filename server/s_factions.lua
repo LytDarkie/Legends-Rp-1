@@ -660,7 +660,7 @@ function logFactionAction(factionId, action, actor, target, details)
     if not db then return end
     dbExec(db, "INSERT INTO faction_logs (faction_id, action, actor, target, details) VALUES (?, ?, ?, ?, ?)",
         factionId, action, actor or "", target or "", details or "")
-end)
+end
 
 -- ============================================
 -- CLEANUP ON PLAYER QUIT
