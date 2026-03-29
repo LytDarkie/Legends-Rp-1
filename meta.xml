@@ -1,0 +1,35 @@
+<meta>
+    <info author="Legends Roleplay" version="2.0.0" name="legends-rp" description="Legends Roleplay - Servidor Argentino de Roleplay" type="gamemode" />
+
+    <!-- Shared Scripts -->
+    <script src="shared/config.lua" type="shared" />
+
+    <!-- Server Scripts -->
+    <script src="server/s_database.lua" type="server" />
+    <script src="server/s_accounts.lua" type="server" />
+    <script src="server/s_spawn.lua" type="server" />
+    <script src="server/s_chat.lua" type="server" />
+    <script src="server/s_vehicles.lua" type="server" />
+    <script src="server/s_houses.lua" type="server" />
+    <script src="server/s_jobs.lua" type="server" />
+    <script src="server/s_admin.lua" type="server" />
+    <script src="server/s_factions.lua" type="server" />
+
+    <!-- Client Scripts -->
+    <script src="client/c_main.lua" type="client" />
+    <script src="client/c_login.lua" type="client" />
+    <script src="client/c_hud.lua" type="client" />
+    <script src="client/c_nametags.lua" type="client" />
+    <script src="client/c_factions.lua" type="client" />
+
+    <!-- Settings -->
+    <min_mta_version client="1.5.9-9.21437" server="1.5.9-9.21437" />
+
+    <!-- Exports -->
+    <export function="getDatabase" type="server" />
+    <export function="cachedQuery" type="server" />
+    <export function="invalidateCache" type="server" />
+    <export function="isPlayerAdmin" type="server" />
+    <export function="getAdminLevelName" type="server" />
+    <export function="isPlayerLoggedIn" type="server" />
+</meta>
